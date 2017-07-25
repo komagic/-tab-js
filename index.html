@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       div,p{margin: 0;padding: 0}
+        div {
+            display: block
+        }
+
+        a {
+             
+            cursor: pointer;
+            text-decoration: none;
+        
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            
+
+            display: none
+        }
+
+        .current {
+            display: block
+        }
+
+        .btn {
+            border: none;
+            background: #34495e;
+            color: white;
+            font-size: 16.5px;
+            text-decoration: none;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: 0.25s;
+            -moz-transition: 0.25s;
+            -o-transition: 0.25s;
+            transition: 0.25s;
+            -webkit-backface-visibility: hidden;
+            padding: 12px 24px;
+            background-color: #ECF0F1;
+
+            border-radius: 6px;
+            font-size: 16.5px;
+            border: none;
+        }
+
+        .btn.current {
+
+            background-color: #4e6d8d;
+        }
+
+        .box.current:nth-child(1) {
+              background-color: #3498db;
+        }
+
+        .box.current:nth-child(2) {
+            background: #9B59B6
+        }
+
+        .box.current:nth-child(3) {
+            background-color: #f1c40f;
+        }
+
+       
+
+        .abc ul li {
+            display: inline-block;
+            list-style: none;
+            border: 1px solid;
+            transition: 0.5s;
+            text-align: center;
+        }
+
+       .content .box{
+           color: #fff;
+           text-align: center;
+           
+       }
+       .content .box p{
+          
+    
+         
+         line-height: 300px;
+            font-size: 62px;
+       }
+     
+    </style>
+</head>
+
+<body>
+    <div class="abc">
+        <div class="buttons">
+            <ul class="father">
+                <li class="btn current">1</li>
+                <li class="btn">2</li>
+                <li class="btn">3</li>
+
+            </ul>
+        </div>
+        <div class="content">
+
+            <div class="box current">
+                <p>1</p>
+            </div>
+            <div class="box">
+                 <p>2</p>
+            </div>
+            <div class="box">
+                <p>3</p>
+            </div>
+            </a>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./tbtab.js"></script>
+    <script>
+        var a = new Tab({
+
+            ele: "father", //按钮的父元素
+            type: "click", //类型（mouseover,mouseout...）
+            //内容激活的class名字
+            btnItem: "btn", //按钮子元素
+            current: "current",
+            bdItemParent: "content" //内容的父元素
+        });
+        console.log(a);
+    </script>
+</body>
+
+</html>
