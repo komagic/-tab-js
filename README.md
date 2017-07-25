@@ -1,5 +1,6 @@
 ### tab 选项卡插件
 
+演示地址：https://komagic.github.io/-tab-js/
 ### 1.实现方式
     js原生实现
 
