@@ -3,7 +3,7 @@
 ### 1.实现方式
     js原生实现，不依赖第三方插件
 
-#### 2.how to create
+#### 2.使用方法
 1.引入 tbtab.js
 
 2.<pre>var tab = new Tab({
